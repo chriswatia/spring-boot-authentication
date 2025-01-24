@@ -1,6 +1,6 @@
 spring:
   application:
-    name=AUTH-SERVER
+    name=auth-server
   datasource:
     url: jdbc:postgresql://localhost:5432/user_db
     username: postgres
@@ -18,9 +18,8 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://eureka-server:8761/eureka/
+      defaultZone: http://eureka-server:8761/eureka
   instance:
-    hostname: AUTH-SERVER
     prefer-ip-address: true
 keyStore:
   path: keyStore.jks
